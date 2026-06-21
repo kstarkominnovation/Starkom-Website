@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K'STARKOM INNOVATIONS</title>
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- INTRO SPLASH -->
+
+  <div id="intro-splash">
+    <div class="splash-content">
+      <img src="assets/logo.png" alt="Logo" class="splash-logo" />
+      <h1 class="splash-name">K'STARKOM INNOVATIONS</h1>
+      <div class="splash-tagline">Engineering the Future</div>
+      <div class="splash-bar">
+        <div class="splash-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <img src="assets/logo.png" class="nav-logo-img" />
+        <span class="nav-logo-text">K'STARKOM INNOVATIONS</span>
+      </a>
+
+```
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#team" class="nav-link">Team</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+
+  <button class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+```
+
+  </nav>
+
+  <!-- HERO -->
+
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-bg-logo">
+      <img src="assets/logo.png" alt="K'STARKOM Logo" />
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">EST. 2024</div>
+
+      <h1 class="hero-title">
+        <span class="hero-title-main">Innovate.</span>
+        <span class="hero-title-main">Build.</span>
+        <span class="hero-title-accent">Launch.</span>
+      </h1>
+
+      <p class="hero-sub">
+        We turn bold engineering ideas into real-world solutions — from embedded systems to web platforms.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Work With Us</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+
+        <div class="stat-divider"></div>
+
+        <div class="stat">
+          <span class="stat-num">6+</span>
+          <span class="stat-label">Hackathons</span>
+        </div>
+
+        <div class="stat-divider"></div>
+
+        <div class="stat">
+          <span class="stat-num">5</span>
+          <span class="stat-label">Members</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+
+  <section id="about">
+    <div class="container">
+      <div class="section-eyebrow about-eyebrow">Who We Are</div>
+
+      <h2 class="section-title">
+        Built by engineers.<br />
+        <span class="accent">Driven by purpose.</span>
+      </h2>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            K'STARKOM Innovations is a collaborative engineering space where ideas are transformed into working prototypes. We are a team of passionate students who believe in learning by building, exploring technologies, and solving real-world challenges through practical implementation.
+          </p>
+
+          <p>
+            Our work spans across embedded systems, IoT, robotics, and software development. Each project is an opportunity to experiment, refine our skills, and push the boundaries of what we can create as a team.
+          </p>
+        </div>
+
+        <!-- Terminal Box Visual -->
+        <div class="terminal-box">
+          <div class="terminal-header">
+            <span class="t-dot red"></span>
+            <span class="t-dot yellow"></span>
+            <span class="t-dot green"></span>
+            <span class="t-title">kstarkom@innovations:~</span>
+          </div>
+          <div class="terminal-body">
+            <div class="t-line">
+              <span class="t-prompt">$</span>
+              <span class="t-cmd">neofetch</span>
+            </div>
+            <div class="t-output">
+              <span class="accent">OS:</span> K'STARKOM OS v1.0.0<br>
+              <span class="accent">Host:</span> Student-Led Startup (Est. 2024)<br>
+              <span class="accent">Kernel:</span> Embedded Systems & IoT<br>
+              <span class="accent">Uptime:</span> 24/7 Innovation<br>
+              <span class="accent">Shell:</span> Web Dev & AI/ML<br>
+              <span class="accent">RAM:</span> Infinite Passion
+            </div>
+            <div class="t-line">
+              <span class="t-prompt">$</span>
+              <span class="t-cmd">ping -c 1 future</span>
+            </div>
+            <div class="t-output">
+              64 bytes from future: icmp_seq=1 ttl=64 time=0.04ms
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section id="projects">
+    <div class="container">
+      <div class="section-eyebrow">What We've Built</div>
+      <h2 class="section-title">Our <span class="accent">Projects</span></h2>
+
+      <!-- FILTERS -->
+      <div id="project-filters"></div>
+
+      <!-- PROJECT GRID -->
+      <div id="projects-grid" class="projects-grid">
+        <div class="loading-spinner">
+          <p>Loading projects...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+
+  <section id="team">
+    <div class="container">
+      <div class="section-eyebrow">The Builders</div>
+      <h2 class="section-title">Meet the <span class="accent">Team</span></h2>
+
+```
+  <div id="team-grid">
+    <div class="loading-spinner">
+      <p>Loading team...</p>
+    </div>
+  </div>
+</div>
+```
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-eyebrow">Get In Touch</div>
+      <h2 class="section-title">Let's Collaborate</h2>
+
+      <div class="contact-grid">
+        <!-- Contact Info (Left Column) -->
+        <div class="contact-info">
+          <p class="contact-desc">
+            Have a question, project idea, or collaboration query? Get in touch with us. We'll get back to you as soon as possible.
+          </p>
+
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <strong>Email Us</strong>
+              <a href="mailto:kstarkominnovation@gmail.com">kstarkominnovation@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <strong>Call Us</strong>
+              <a href="tel:+918778257433">+91 8778257433</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form (Right Column) -->
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="contact-name">Your Name</label>
+            <input type="text" id="contact-name" placeholder="Your Name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" placeholder="Email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="contact-query">Query / Message</label>
+            <textarea id="contact-query" placeholder="Message" required></textarea>
+          </div>
+
+          <div class="form-status" id="form-status"></div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer id="footer">
+    <div class="container footer-inner">
+      <p>© 2024 K'STARKOM Innovations.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+
+  <div id="modal-overlay" class="modal-overlay">
+    <div class="modal">
+      <button id="modal-close" class="modal-close">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- FIREBASE -->
+
+  <script type="module" src="firebase.js"></script>
+
+  <!-- MAIN SCRIPT -->
+
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>
